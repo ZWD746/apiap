@@ -2,118 +2,109 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://ZWD746.github.io/apiap/zh-cn/</loc>
+    <loc>https://ZWD746.github.io/apiap/</loc>
     <lastmod>2020-09-09T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
+                href="https://ZWD746.github.io/apiap/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
                 href="https://ZWD746.github.io/apiap/"
                 />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ar"
-                href="https://ZWD746.github.io/apiap/ar/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://ZWD746.github.io/apiap/zh-cn/"
-                />
   </url><url>
-    <loc>https://ZWD746.github.io/apiap/zh-cn/categories/</loc>
+    <loc>https://ZWD746.github.io/apiap/categories/</loc>
     <lastmod>2020-09-09T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
+                href="https://ZWD746.github.io/apiap/en/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
                 href="https://ZWD746.github.io/apiap/categories/"
                 />
+  </url><url>
+    <loc>https://ZWD746.github.io/apiap/p/test-chinese/</loc>
+    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ZWD746.github.io/apiap/post/</loc>
+    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ZWD746.github.io/apiap/categories/test/</loc>
+    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ZWD746.github.io/apiap/categories/%E6%B5%8B%E8%AF%95/</loc>
+    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ZWD746.github.io/apiap/archives/</loc>
+    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ZWD746.github.io/apiap/page/</loc>
+    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ZWD746.github.io/apiap/tags/css/</loc>
+    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ZWD746.github.io/apiap/tags/html/</loc>
+    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ZWD746.github.io/apiap/tags/markdown/</loc>
+    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ZWD746.github.io/apiap/p/markdown-syntax-guide/</loc>
+    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ZWD746.github.io/apiap/categories/syntax/</loc>
+    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ZWD746.github.io/apiap/tags/</loc>
+    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="ar"
-                href="https://ZWD746.github.io/apiap/ar/categories/"
+                hreflang="en"
+                href="https://ZWD746.github.io/apiap/en/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://ZWD746.github.io/apiap/zh-cn/categories/"
-                />
-  </url><url>
-    <loc>https://ZWD746.github.io/apiap/zh-cn/p/test-chinese/</loc>
-    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ZWD746.github.io/apiap/zh-cn/post/</loc>
-    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://ZWD746.github.io/apiap/post/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ar"
-                href="https://ZWD746.github.io/apiap/ar/post/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://ZWD746.github.io/apiap/zh-cn/post/"
-                />
-  </url><url>
-    <loc>https://ZWD746.github.io/apiap/zh-cn/categories/test/</loc>
-    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://ZWD746.github.io/apiap/categories/test/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://ZWD746.github.io/apiap/zh-cn/categories/test/"
-                />
-  </url><url>
-    <loc>https://ZWD746.github.io/apiap/zh-cn/categories/%E6%B5%8B%E8%AF%95/</loc>
-    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ZWD746.github.io/apiap/zh-cn/page/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://ZWD746.github.io/apiap/page/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://ZWD746.github.io/apiap/zh-cn/page/"
-                />
-  </url><url>
-    <loc>https://ZWD746.github.io/apiap/zh-cn/tags/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
                 href="https://ZWD746.github.io/apiap/tags/"
                 />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ar"
-                href="https://ZWD746.github.io/apiap/ar/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://ZWD746.github.io/apiap/zh-cn/tags/"
-                />
   </url><url>
-    <loc>https://ZWD746.github.io/apiap/zh-cn/%E5%85%B3%E4%BA%8E/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://ZWD746.github.io/apiap/about/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://ZWD746.github.io/apiap/zh-cn/%E5%85%B3%E4%BA%8E/"
-                />
+    <loc>https://ZWD746.github.io/apiap/tags/themes/</loc>
+    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ZWD746.github.io/apiap/categories/themes/</loc>
+    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ZWD746.github.io/apiap/p/placeholder-text/</loc>
+    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ZWD746.github.io/apiap/tags/tag-with-whitespaces/</loc>
+    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ZWD746.github.io/apiap/categories/test-with-whitespaces/</loc>
+    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ZWD746.github.io/apiap/tags/text/</loc>
+    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ZWD746.github.io/apiap/p/math-typesetting/</loc>
+    <lastmod>2019-03-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ZWD746.github.io/apiap/tags/emoji/</loc>
+    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ZWD746.github.io/apiap/p/emoji-support/</loc>
+    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ZWD746.github.io/apiap/links/</loc>
+  </url><url>
+    <loc>https://ZWD746.github.io/apiap/search/</loc>
+  </url><url>
+    <loc>https://ZWD746.github.io/apiap/%E5%85%B3%E4%BA%8E/</loc>
   </url>
 </urlset>
