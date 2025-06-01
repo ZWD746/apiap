@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://ZWD746.github.io/apiap/</loc>
-    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
+    <lastmod>2025-06-02T01:39:23+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -14,6 +14,12 @@
                 hreflang="zh-cn"
                 href="https://ZWD746.github.io/apiap/"
                 />
+  </url><url>
+    <loc>https://ZWD746.github.io/apiap/post/</loc>
+    <lastmod>2025-06-02T01:39:23+08:00</lastmod>
+  </url><url>
+    <loc>https://ZWD746.github.io/apiap/p/windowtest/</loc>
+    <lastmod>2025-06-02T01:39:23+08:00</lastmod>
   </url><url>
     <loc>https://ZWD746.github.io/apiap/categories/</loc>
     <lastmod>2020-09-09T00:00:00+00:00</lastmod>
@@ -29,9 +35,6 @@
                 />
   </url><url>
     <loc>https://ZWD746.github.io/apiap/p/test-chinese/</loc>
-    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ZWD746.github.io/apiap/post/</loc>
     <lastmod>2020-09-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ZWD746.github.io/apiap/categories/test/</loc>
@@ -74,10 +77,10 @@
                 href="https://ZWD746.github.io/apiap/tags/"
                 />
   </url><url>
-    <loc>https://ZWD746.github.io/apiap/tags/themes/</loc>
+    <loc>https://ZWD746.github.io/apiap/categories/themes/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ZWD746.github.io/apiap/categories/themes/</loc>
+    <loc>https://ZWD746.github.io/apiap/tags/themes/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ZWD746.github.io/apiap/p/placeholder-text/</loc>
