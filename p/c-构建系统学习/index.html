@@ -328,7 +328,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 2 分钟
+                    阅读时长: 3 分钟
                 </time>
             </div>
         
@@ -387,7 +387,130 @@
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
+</div><p>相信大家再熟悉不过了，但是在实际工作中，这种项目几乎不存在。把所有的功能模块放到一个文件里，这既不利于开发，也不利于维护。总不能在开发的时候把一个文件传来传去，你写一会你的代码，我写一会我的代码。效率极其低下，所以我们要解耦合。</p>
+<p>此时我们将目录改为如下所示</p>
+<p><img src="/apiap/p/c-%E6%9E%84%E5%BB%BA%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0/2.png"
+	width="593"
+	height="256"
+	srcset="/apiap/p/c-%E6%9E%84%E5%BB%BA%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0/2_hu_47631764e16ef079.png 480w, /apiap/p/c-%E6%9E%84%E5%BB%BA%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0/2_hu_d8243ba3bcef45c9.png 1024w"
+	loading="lazy"
+	
+		alt="2"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="231"
+		data-flex-basis="555px"
+	
+></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&#34;hello/hello.h&#34;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&#34;world/world.h&#34;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">printHello</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="n">printWorld</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
+</div><p>此时main函数内容如上所示，将打印hello和打印world分别解耦到两个不同的模块，这样这三个模块就可以同时开发了。于此同时，编译的难度又上升了。</p>
+<p>对于原先的项目结构，我们只需输入一下编译命令即可</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">g++ -o helloWorld main.cpp
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>而现在我们需要输入</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">g++ -o helloWorld main.cpp hello/hello.cpp world/world.cpp
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>对于我们这个小项目，这么做只是稍微有那么一点点麻烦，凡是，对于大型项目来说，这么做无疑是灾难级的。一个几十、上百个模块的项目，且不论我们写编译命令时要写多少个.cpp文件，编译成功后，若改动其中一个小模块，则需要整个项目重写编译，这造成了大量的时间浪费。</p>
+<p>那么，有没有办法避免呢？当然时有的，我们可以分别编译每一个模块，最后再链接到一起。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">g++ -c main.cpp
+</span></span><span class="line"><span class="cl">g++ -c hello/hello.cpp
+</span></span><span class="line"><span class="cl">g++ -c world/world.cpp
+</span></span><span class="line"><span class="cl">g++ -o helloWorld main.o hello.o world.o
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>这样我们在修改了某个模块后，只需要重写编译该模块的.o文件，然后在重写链接即可。这样虽然解决了“牵一发而动全身”的问题，但是对于编译来说，仍有不少麻烦。我们人要一个一个手动编译模块，这就会牵扯到遗漏的情况。于是我们引入makefile来解决问题。</p>
+<p>我们需要在项目目录下创建一个Makefile文件(文件名及大小写必须和我写的一致)，内容填写</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-makefile" data-lang="makefile"><span class="line"><span class="cl"><span class="nf">helloWorld</span><span class="o">:</span> <span class="n">main</span>.<span class="n">o</span> <span class="n">hello</span>.<span class="n">o</span> <span class="n">world</span>.<span class="n">o</span>
+</span></span><span class="line"><span class="cl">        g++ -o helloWorld main.o hello.o world.o
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nf">main.o</span><span class="o">:</span> <span class="n">main</span>.<span class="n">cpp</span> <span class="n">hello</span>/<span class="n">hello</span>.<span class="n">h</span> <span class="n">world</span>/<span class="n">world</span>.<span class="n">h</span>
+</span></span><span class="line"><span class="cl">        g++ -c main.cpp
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nf">hello.o</span><span class="o">:</span> <span class="n">hello</span>/<span class="n">hello</span>.<span class="n">h</span> <span class="n">hello</span>/<span class="n">hello</span>.<span class="n">cpp</span>
+</span></span><span class="line"><span class="cl">        g++ -c hello/hello.cpp
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nf">world.o</span><span class="o">:</span> <span class="n">world</span>/<span class="n">world</span>.<span class="n">h</span> <span class="n">world</span>/<span class="n">world</span>.<span class="n">cpp</span>
+</span></span><span class="line"><span class="cl">        g++ -c world/world.cpp
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>项目目录变为</p>
+<p><img src="/apiap/p/c-%E6%9E%84%E5%BB%BA%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0/3.png"
+	width="511"
+	height="257"
+	srcset="/apiap/p/c-%E6%9E%84%E5%BB%BA%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0/3_hu_b29a2a57325aab00.png 480w, /apiap/p/c-%E6%9E%84%E5%BB%BA%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0/3_hu_9c511c4b60d36ba7.png 1024w"
+	loading="lazy"
+	
+		alt="3"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="198"
+		data-flex-basis="477px"
+	
+></p>
+<p>此时在Makefile同目录下，只需输入一个make，系统便根据所写Makefie文件来执行编译命令，这个编译时增量编译，当你修改你个文件时，只有依赖他的模块会重新编译，其余则不会变化，这大大减少了浪费的时间，同时也将手动逐个编译，变成自动编译。</p>
+
 </section>
 
 
