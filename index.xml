@@ -7,7 +7,22 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>apiap</copyright>
-        <lastBuildDate>Mon, 02 Jun 2025 01:39:23 +0800</lastBuildDate><atom:link href="https://ZWD746.github.io/apiap/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 02 Jun 2025 22:17:16 +0800</lastBuildDate><atom:link href="https://ZWD746.github.io/apiap/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>C&#43;&#43;构建系统学习</title>
+        <link>https://ZWD746.github.io/apiap/p/c-%E6%9E%84%E5%BB%BA%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0/</link>
+        <pubDate>Mon, 02 Jun 2025 22:17:16 +0800</pubDate>
+        
+        <guid>https://ZWD746.github.io/apiap/p/c-%E6%9E%84%E5%BB%BA%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0/</guid>
+        <description>&lt;h1 id=&#34;把简单的问题做复杂&#34;&gt;把简单的问题做复杂
+&lt;/h1&gt;&lt;h2 id=&#34;引言&#34;&gt;引言：
+&lt;/h2&gt;&lt;p&gt;​	在我读高中时期，我的物理老师曾经说过一句话&amp;quot;把复杂的问题弄简单的是高手，把简单问题弄复杂的也是高手”。
+​	曾经我对这句话的前半段无比认可，当时的我认为如果一个人能将一个复杂的问题简单化，那他一定十分绝对是这个领域的强者，并且愿意花时间把这个领域的知识通俗化，向还未入门的人来传播。当时的我认为这样的人不仅实力强悍，内心也很强大，而把简单问题复杂化的人，都是故弄玄虚，人为设置门槛，想让自己在别人眼里“看起来&amp;quot;很厉害，说到底是内心不自信的表现。
+​	在现在我的看来，这后半句话也是有些道理的，在某些工作中，是要将一些简单的问题复杂化，但是这个复杂是针对于局部的，通过让一些局部问题复杂化，来使得这个问题的整体变得清晰化，统一化。这样对于问题的解决就有了可以规范化的道路，让整个问题更容易去解决。虽然这会提升解决这个问题的门槛，但是对于已经入门的人来说，这反而增加了解决问题的效率，正如我接下来要学习的构建系统。&lt;/p&gt;
+&lt;h1 id=&#34;第一个使用构建系统的cpp工程&#34;&gt;第一个使用构建系统的cpp工程
+&lt;/h1&gt;&lt;p&gt;​	这次我依然使用行业惯例——Hello world，作为我的第一个有构建系统的工程。&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>WindowTest</title>
         <link>https://ZWD746.github.io/apiap/p/windowtest/</link>
         <pubDate>Mon, 02 Jun 2025 01:39:23 +0800</pubDate>
